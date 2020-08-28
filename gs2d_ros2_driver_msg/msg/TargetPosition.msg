@@ -1,0 +1,2 @@
+int16 servo_id
+float32 target_position

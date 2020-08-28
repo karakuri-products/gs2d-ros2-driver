@@ -1,0 +1,2 @@
+setuptools
+gs2d

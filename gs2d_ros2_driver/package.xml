@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>gs2d-ros2-dirver</name>
+  <name>gs2d_ros2_driver</name>
   <version>0.0.1</version>
-  <description>gs2d driver for ROS2</description>
-  <maintainer email="hide@krkrpro.com">Hideyuki Takei</maintainer>
+  <description>ROS2 driver for gs2d</description>
+  <maintainer email="gs2d@krkrpro.com">Karakuri Products</maintainer>
   <license>Apache 2.0</license>
 
   <url type="repository">https://github.com/karakuri-products/gs2d-ros2-driver</url>
