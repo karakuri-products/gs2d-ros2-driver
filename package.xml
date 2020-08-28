@@ -9,7 +9,11 @@
 
   <url type="repository">https://github.com/karakuri-products/gs2d-ros2-driver</url>
   <url type="bugtracker">https://github.com/karakuri-products/gs2d-ros2-driver/issues</url>
-  
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
   <export>
     <build_type>ament_python</build_type>
   </export>
