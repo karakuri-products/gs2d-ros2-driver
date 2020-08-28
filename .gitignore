@@ -2,8 +2,6 @@
 build/*
 install/*
 log/*
-test
-test/**
 
 # Xcode
 #build/*
