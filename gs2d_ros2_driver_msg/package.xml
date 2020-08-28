@@ -7,9 +7,6 @@
   <maintainer email="gs2d@krkrpro.com">Karakuri Products</maintainer>
   <license>Apache 2.0</license>
 
-  <url type="repository">https://github.com/karakuri-products/gs2d-ros2-driver</url>
-  <url type="bugtracker">https://github.com/karakuri-products/gs2d-ros2-driver/issues</url>
-
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <build_depend>rosidl_default_generators</build_depend>
