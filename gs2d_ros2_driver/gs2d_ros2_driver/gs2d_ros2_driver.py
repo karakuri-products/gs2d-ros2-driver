@@ -1,6 +1,7 @@
 import rclpy
 from rclpy.node import Node
 from gs2d_ros2_driver_msg.msg import TargetPosition, TorqueEnable
+from gs2d import SerialInterface, RobotisP20
 
 
 class Gs2dRos2Driver(Node):
@@ -25,14 +26,19 @@ class Gs2dRos2Driver(Node):
             10
         )
 
+        self.si = SerialInterface(baudrate=1000000)
+        self.robotis = RobotisP20(self.si)
+
         # timer_period = 0.5
         # self.timer = self.create_timer(timer_period, self.timer_callback)
 
     def target_position_callback(self, msg):
         self.get_logger().info('subscribe target position: {} (id: {})'.format(msg.data, msg.servo_id))
+        self.robotis.set_target_position(msg.data, sid=msg.servo_id)
 
     def torque_enable_callback(self, msg):
         self.get_logger().info('subscribe torque enable: {} (id: {})'.format(msg.data, msg.servo_id))
+        self.robotis.set_torque_enable(msg.data, sid=msg.servo_id)
 
     # def timer_callback(self):
     #     self.get_logger().info('Yes! initializing...')
